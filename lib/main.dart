@@ -89,13 +89,22 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(
-    Center(
-      child: Container(
-        padding: EdgeInsets.all(30),
-        color:Colors.teal,
-        child: Icon(Icons.mobile_screen_share,size: 100,),
+  runApp(const myApp());
+}
+
+class myApp extends StatelessWidget
+{
+  const myApp({Key? key}) : super(key : key);
+
+  @override
+  Widget build(BuildContext context){
+    return const MaterialApp(
+      home: Scaffold(
+        body: Icon(
+          Icons.volume_off,
+          size: 200,
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
