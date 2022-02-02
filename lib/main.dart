@@ -86,6 +86,7 @@
 //   )
 //   );
 // }
+import 'package:abdulakh/i_widgets/my_scaffold.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -99,12 +100,7 @@ class myApp extends StatelessWidget
   @override
   Widget build(BuildContext context){
     return const MaterialApp(
-      home: Scaffold(
-        body: Icon(
-          Icons.volume_off,
-          size: 200,
-        ),
-      ),
+      home: myScaffold(),
     );
   }
 }
